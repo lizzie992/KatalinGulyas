@@ -1,0 +1,50 @@
+@page "/About"
+<PageTitle>About Kata</PageTitle>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">
+    <a href="files/Katalin_Gulyas_CV.pdf" download="Katalin_Gulyas_CV.pdf" target="_top">
+        @_downloadCvTitle
+    </a>
+</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_aboutIntro</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_aboutBackground</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_aboutTransition</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_aboutStrength</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_whatImDoingNowTitle</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_whatImDoingNow</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_outsideWorkTitle</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_outsideWorkLanguages</div>
+
+<div style="text-align: center; margin-top: 20px; white-space: pre-line;">@_outsideWorkHobbies</div>
+
+
+
+@code {
+
+    private string _aboutIntro = "Hi, I'm Katalin - Kata to most people. I'm a backend-focused developer based in Barcelona.";
+
+    private string _aboutBackground = "Before software, I spent ten years in logistics and supply chain. I became an expert on supply chain processes, shipping coordination, preparing documentation, carrier management and communicating with stakeholders. I led automation and integration projects with participants across Europe. That career taught me how businesses actually run: what clients need, where processes break down, and what makes a system genuinely usable for the people who have to work in it every day.";
+
+    private string _aboutTransition = "That understanding is a big part of why I moved into software. I wanted to build the systems that solve real life problems. So I went through an intensive, one-to-one software engineering program with Rakete Mentoring, and started building - first Baxi, a ride-sharing platform I designed and shipped entirely on my own, and now RocketVideo, an educational video platform I'm building with a small team at AeonBytes. I'm not new to solving hard problems. I'm new to solving them in code, and I've been closing that gap fast.";
+
+    private string _aboutStrength = "I bring something most junior developers don't have: a decade of experience in international, multicultural corporate environments, working directly with stakeholders, customers, and cross-functional teams under real pressure.";
+
+    private string _whatImDoingNowTitle = "What I'm doing now";
+    private string _whatImDoingNow = "I'm continuing to improve my technical range - currently deepening my JavaScript and moving into React - while working on RocketVideo, and new projects. I'm also open to roles that combine my supply chain background with technology, where that dual perspective is a genuine asset.";
+
+    private string _outsideWorkTitle = "Me outside of work";
+    private string _outsideWorkLanguages = "I'm Hungarian, and I've lived and worked in Budapest, Munich, and now Barcelona, which means I've picked up a few languages along the way (Hungarian natively, fluent English, working German, and Spanish I'm actively building up).";
+    private string _outsideWorkHobbies = "Outside of screens you can usually find me planning trips, playing board games, exploring cities and tapas restaurants.";
+
+    private string _downloadCvTitle = "Download my CV";
+
+
+}
