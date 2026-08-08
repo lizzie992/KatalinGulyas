@@ -1,0 +1,128 @@
+@page "/Skills"
+<PageTitle>Skills and experiences</PageTitle>
+
+<div style="display: flex; gap: 2rem;">
+    <div style="flex: 1;">
+        <p>@_technicalSkillsTitle</p>
+        
+        <p>@_backendTitle</p>
+        <p>@_backendDescription</p>
+        
+        <p>@_frontendTitle</p>
+        <p>@_frontendDescription</p>
+        
+        <p>@_databaseTitle</p>
+        <p>@_databaseDescription</p>
+        
+        <p>@_devOpsTitle</p>
+        <p>@_devOpsDescription</p>
+        
+        <p>@_appliedProjectsTitle</p>
+        
+        <p>@_baxiSkillsTitle</p>
+        <p>@_baxiSkillsDescription</p>
+        
+        <p>@_rocketvideoSkillsTitle</p>
+        <p>@_rocketvideoSkillsDescription</p>
+        
+    </div>
+    <div style="flex: 1;">
+        <p>@_businessSkillsTitle</p>
+        <p>@_businessSkillsSummary</p>
+
+        <p>@_siteIntegrationTitle</p>
+        <p>@_siteIntegrationDescription</p>
+
+        <p>@_customerAccountTitle</p>
+        <p>@_customerAccountDescription</p>
+
+        <p>@_carrierVendorTitle</p>
+        <p>@_carrierVendorDescription</p>
+
+        <p>@_productionPlanningTitle</p>
+        <p>@_productionPlanningDescription</p>
+
+        <p>@_dayToDayTitle</p>
+        <p>@_dayToDayDescription</p>
+    </div>
+</div>
+
+
+@code {
+
+    // ===== TECHNICAL SKILLS =====
+
+    private string _technicalSkillsTitle = "Technical Skills";
+
+    private string _backendTitle = "Backend Development";
+    private string _backendDescription = "C#, .NET 9 / .NET 10, ASP.NET Core, Entity Framework Core, Object-Oriented Programming, Role-Based Access Control (RBAC), Event-Driven Architecture, REST API Integration, Code Debugging";
+
+    private string _frontendTitle = "Frontend Development";
+    private string _frontendDescription = "Blazor, HTML5, CSS3, JavaScript (currently expanding into TypeScript and React)";
+
+    private string _databaseTitle = "Database";
+    private string _databaseDescription = "MySQL — schema design and maintenance with Entity Framework Core";
+
+    private string _devOpsTitle = "DevOps & Infrastructure";
+    private string _devOpsDescription = "Git (branching, merge conflict resolution, team-based version control workflows), Docker (containerized deployment on Linux servers), Linux";
+
+    private string _appliedProjectsTitle = "Applied Project Experience";
+
+    private string _baxiSkillsTitle = "Baxi — Full-Stack Ride-Sharing Platform (solo project)";
+    private string _baxiSkillsDescription = "Designed, developed, and deployed a complete full-stack application in C# (.NET) and Blazor.\n"
+                                            + "Built a routing algorithm to match drivers and passengers and optimize shared routes based on geographic overlap and distance.\n"
+                                            + "Implemented real-time chat functionality using event-driven architecture.\n"
+                                            + "Integrated external services including the Google Maps API and geolocation.\n"
+                                            + "Designed and maintained a MySQL database using Entity Framework Core.\n"
+                                            + "Implemented authentication, role-based access control, and account security features.\n"
+                                            + "Built automated email notifications and multi-language support.\n"
+                                            + "Managed deployment on a Linux server using Docker containers.";
+
+    private string _rocketvideoSkillsTitle = "RocketVideo — Educational Video Streaming Platform (AeonBytes, team project)";
+    private string _rocketvideoSkillsDescription = "Wrote core domain classes and CRUD operations for courses, modules, and lectures, with role-based access control governing content management permissions.\n"
+                                                    + "Designed and implemented a drip-scheduling system controlling module release timing, anchored to individual student enrollment dates.\n"
+                                                    + "Supported evaluation and integration of a video Content Delivery Network (CDN).\n"
+                                                    + "Collaborated within a fixed development team using Git branching workflows, resolving merge conflicts and adapting to established team conventions in a closed-source codebase.";
+
+    
+    
+    
+    
+
+    // ===== BUSINESS, SUPPLY CHAIN & LOGISTICS SKILLS =====
+
+    private string _businessSkillsTitle = "Business, Supply Chain & Logistics Skills";
+    private string _businessSkillsSummary = "10+ years of international logistics and supply chain experience — spanning freight forwarding, transport execution, carrier management, production planning, and cross-site integration across Europe's Givaudan network. Comfortable operating at both strategic and day-to-day execution level: leading process automation and site go-lives on one hand, coordinating 20–30+ individual shipments a day on the other.";
+
+    private string _siteIntegrationTitle = "Site Integration & Process Improvement";
+    private string _siteIntegrationDescription = "Integrated 2 new production sites into daily European transport operations, leading knowledge transfer and stakeholder training through go-live and stabilization.\n"
+                                                  + "Led automation of shipment planning, moving the majority of European shipments to automatic planning.\n"
+                                                  + "Analyzed workflows to identify supply risks, prevent backlogs, and reduce delays.";
+
+    private string _customerAccountTitle = "Customer & Account Management";
+    private string _customerAccountDescription = "Managed strategic customer relationships and daily transport operations for key accounts.\n"
+                                                  + "Elevated account performance to Category A status through measurable KPI improvements.\n"
+                                                  + "Resolved delays, damages, invoice discrepancies, and pricing issues across the carrier network.";
+
+    private string _carrierVendorTitle = "Carrier & Vendor Management";
+    private string _carrierVendorDescription = "Sourced carriers and negotiated freight rates via TIMOCOM as a freight broker.\n"
+                                                + "Managed relationships and monthly KPI reviews for 2–4 strategic carrier partners simultaneously.\n"
+                                                + "Monitored forwarder performance and implemented targeted corrective actions.";
+
+    private string _productionPlanningTitle = "Production Planning";
+    private string _productionPlanningDescription = "Backup coverage for Production Planner: balancing capacity, customer priorities, and material availability.\n"
+                                                      + "Monitored stock and raw material availability in SAP, coordinating with procurement to prevent delays.";
+
+    private string _dayToDayTitle = "Day-to-Day Execution";
+    private string _dayToDayDescription = "Plan and coordinate 20–30+ daily European road shipments and ~10 weekly global shipments across road, air, sea, and express courier.\n"
+                                           + "Managed up to 100+ shipments/week in a hub coordination role.\n"
+                                           + "Prepared export declarations, Certificates of Origin, ATR documentation, and CAD banking documentation.\n"
+                                           + "SAP TM, SAP GTS, SAP PP.\n"
+                                           + "Certified: ICAO TI / IATA DGR Dangerous Goods, Shipper Activities (A), valid through April 2028.";
+
+    
+    
+    
+    
+    
+}
