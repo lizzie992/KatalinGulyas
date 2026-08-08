@@ -1,0 +1,50 @@
+@page "/Rocketvideo"
+
+<h1 style="text-align: center;">@_title</h1>
+<div style="text-align: center;">@_smallTitle</div>
+
+<div style="text-align: center;">@_contribution</div>
+
+<div style="text-align: center;">@_shortDescription</div>
+<div style="text-align: center;">@_featuresTitle</div>
+<div style="text-align: center;">@_features</div>
+<div style="text-align: center;">@_techStackTitle</div>
+<div style="text-align: center;">@_techStack</div>
+<div style="text-align: center;">@_myContribution</div>
+
+@code {
+
+    private string _title = "RocketVideo";
+
+private string _contribution = "RocketVideo is a group project, built by a fixed team through Aeonbytes.\n"
+                               + "I wrote the core domain classes for courses, modules, and lectures, including full CRUD operations with role-based access control.";
+
+private string _smallTitle = "A modern, extensible video and course platform";
+
+private string _shortDescription = "RocketVideo is a video and course-hosting platform for organizing content into courses, modules, and lectures, with support for video transcoding, transcription, search, scheduled content release, and progress tracking.";
+
+private string _featuresTitle = "RocketVideo supports the following functionality:";
+
+private string _features = "Courses organized hierarchically into modules and lectures, giving students a structured, gated learning path\n"
+                           + "Video transcoding for reliable playback across devices\n"
+                           + "Automatic transcription and translation of lecture content\n"
+                           + "Full-text search across video transcripts\n"
+                           + "Drip scheduling that unlocks modules based on each student's individual enrollment date\n"
+                           + "Progress tracking for learners across courses\n"
+                           + "Notifications and subscription management\n";
+
+private string _techStackTitle = "Key Technical Info and Features";
+
+private string _techStack = "Blazor\n"
+                            + "Entity Framework Core\n"
+                            + "Architecture built with scalability in mind\n"
+                            + "Docker for containerized, consistent deployment across environments\n"
+                            + "A lightweight local database setup for development, separate from the full database used in production\n";
+
+private string _myContribution = "I wrote the core domain classes for courses, modules, and lectures, including full CRUD operations with role-based access control governing who can create, edit, or manage each type of content.\n"
+                                 + "I helped evaluate and select the content delivery network used for video hosting and playback.\n"
+                                 + "I designed and implemented the drip-scheduling system — the logic that determines when a module becomes available to a given student, anchored to their individual enrollment date, with access evaluated lazily rather than computed and stored upfront.\n"
+                                 + "Working on RocketVideo has also been my first experience collaborating on a closed, multi-developer codebase — coordinating through Git branches, resolving merge conflicts from parallel work, and adapting to a team's existing conventions.\n";
+    
+
+}
