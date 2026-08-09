@@ -20,13 +20,13 @@
 <div style="text-align: center;">@_features</div>
 
 <div style="text-align: center;">
-    <img src="images/adcreation.png" alt="Ad Creation" style="max-width: 700px; width: 100%;" />
+    <img src="images/adcreation.png" alt="Ad Creation" style="max-width: 700px; width: 100%;"/>
 </div>
 <div style="text-align: center;">
-    <img src="images/adslist.png" alt="Ad List" style="max-width: 700px; width: 100%;" />
+    <img src="images/adslist.png" alt="Ad List" style="max-width: 700px; width: 100%;"/>
 </div>
 <div style="text-align: center;">
-    <img src="images/usermanagement.png" alt="User Management" style="max-width: 700px; width: 100%;" />
+    <img src="images/usermanagement.png" alt="User Management" style="max-width: 700px; width: 100%;"/>
 </div>
 
 <div style="text-align: center;">@_techStackTitle</div>
@@ -39,24 +39,48 @@
     <p>
         Demo videos
     </p>
-    <a href="https://www.youtube.com/watch?v=1QEUl1pSrtI" target="_blank">
-        <p>English</p>
-    </a>
-    <a href="https://www.youtube.com/watch?v=5GR0aDssb9s" target="_blank">
-        <p>German</p>
-    </a>
-    <a href="https://www.youtube.com/watch?v=4YBxYwHhnbE" target="_blank">
-        <p>Hungarian</p>
-    </a>
+    <div class="video-block">
+        <p class="video-label">English</p>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/1QEUl1pSrtI"
+                    title="Baxi demo video (English)"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div class="video-block">
+        <p class="video-label">German</p>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/5GR0aDssb9s"
+                    title="Baxi demo video (German)"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div class="video-block">
+        <p class="video-label">Hungarian</p>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/4YBxYwHhnbE"
+                    title="Baxi demo video (Hungarian)"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
 </div>
 
 @code {
 
     private string _title = "Baxi";
-    
+
     private string _contribution = "Baxi was created as a solo project, all features and code was create by me.\n"
-                                    + "No AI agent was involved in the build and design of this app";
-    
+                                   + "No AI agent was involved in the build and design of this app";
+
     private string _smallTitle = "An efficient and modern solution for the everyday challenges of getting to Baierbrunn";
 
     private string _shortDescription = "Baxi was created to fill the need for reliable transport options to get to/from the office whenever public transport is not available.\n It offers a protected ride-sharing platform where colleagues at a company can safely find potential drivers or passengers.";
@@ -82,13 +106,12 @@
                                            + "JavaScript — used selectively for browser interop (see below)\n"
                                            + "Google Maps API — geolocation and route visualization\n"
                                            + "Published in a docker container on a linux server";
-    
+
     private string _howItWorks = "Matching engine. When a user posts an ad, Baxi compares its route against all open ads in the opposite role (driver ↔ passenger) and scores them by geographic overlap and distance, rather than requiring an exact start/end match. This surfaces rides that are a good-enough fit — for example a driver whose route passes near a passenger's stop — instead of only exact matches, which would make the platform far less useful given how few colleagues share an identical commute.\n"
                                  + "Real-time chat. Built with event handlers rather than polling, so messages appear immediately without the client repeatedly asking the server for updates. This keeps the app responsive without adding unnecessary server load.\n"
                                  + "Geolocation. Integrated with the Google Maps JavaScript API for interactive map browsing and distance/route calculations. Since Blazor components are C#-first, the Maps JS SDK is loaded and called via JavaScript interop — one of the few places in the app where JavaScript is used directly.\n"
                                  + "Safety and moderation. Registration is password-protected, and a reporting system lets admins take action on flagged ads or users (removal, warnings, bans) without needing direct database access.\n"
                                  + "Localization. UI strings are built to support multiple languages from the start, reflecting the multicultural makeup of the intended user base.\n";
-    
 
 
 }
