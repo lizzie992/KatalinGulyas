@@ -1,0 +1,126 @@
+@page "/CV"
+<PageTitle>Katalin's CV</PageTitle>
+
+
+<link href="css/cv.css" rel="stylesheet" />
+
+
+<div class="cv-page">
+
+    <h1 class="name">KATALIN GULYÁS</h1>
+    <p class="role">Backend-Focused .NET Developer — C# · Blazor · Entity Framework Core</p>
+    <p class="contact-line">
+        Barcelona, Spain <span class="sep">|</span>
+        <a href="tel:+36202696009">+36 20 269 6009</a> <span class="sep">|</span>
+        <a href="mailto:gulyaskata99@gmail.com">gulyaskata99@gmail.com</a> <span class="sep">|</span>
+        <a href="https://katalingulyas.com">katalingulyas.com</a> <span class="sep">|</span>
+        <a href="https://linkedin.com/in/katalin-gulyas">linkedin.com/in/katalin-gulyas</a> <span class="sep">|</span>
+        <a href="https://github.com/lizzie992">github.com/lizzie992</a> <span class="sep">|</span>
+        EN / ES / HU / DE
+    </p>
+
+    <div class="cv-download">
+        <a href="files/Katalin_Gulyas_Developer_CV.pdf" download="Katalin_Gulyas_Developer_CV.pdf" target="_top">
+            @_downloadCvTitle
+        </a>
+    </div>
+
+    <h2 class="section">Professional Summary</h2>
+    <p class="body-text">Backend-focused .NET developer with hands-on experience designing and shipping production-ready applications, including a solo-built full-stack platform in active use. Brings a decade of experience in international, multicultural corporate environments — leading automation and integration projects, managing stakeholder relationships, and translating business needs into working systems. Combines that operational maturity with a fast-growing technical skill set in C#, .NET, and modern web development.</p>
+
+    <h2 class="section">Technical Skills</h2>
+    <p class="skills-line">Backend: C#, .NET 9/10, ASP.NET Core, Entity Framework Core</p>
+    <p class="skills-line">Frontend: Blazor, HTML, CSS, JavaScript (learning React)</p>
+    <p class="skills-line">Database: MySQL</p>
+    <p class="skills-line">DevOps &amp; Tools: Git, Docker, Linux, REST APIs</p>
+    <p class="skills-line">Concepts: Role-Based Access Control (RBAC), Event-Driven Architecture, Object-Oriented Programming</p>
+
+    <h2 class="section">Projects Built</h2>
+
+    <div class="project-header">
+        <span class="project-title">Baxi — Full-Stack Ride-Sharing Platform (solo project)</span>
+        <a class="project-link" href="https://github.com/lizzie992/Baxi" target="_blank" rel="noopener">github.com/lizzie992/Baxi</a>
+    </div>
+    <ul class="bullets">
+        <li>Independently designed, built, and deployed a <b>complete production-ready ride-sharing platform</b> in C# (.NET) and Blazor, currently <b>in active use by real colleagues</b>.</li>
+        <li>Built a <b>custom route-matching algorithm</b> that scores potential rides by geographic overlap and distance rather than requiring exact matches, surfacing genuinely usable ride pairings.</li>
+        <li>Implemented <b>real-time chat</b> using event-driven architecture, <b>authentication and role-based access control</b>, and an admin moderation system for user and content management.</li>
+        <li>Integrated the <b>Google Maps API</b> for interactive route visualization and geolocation.</li>
+        <li>Designed and maintained the <b>MySQL database using Entity Framework Core</b>, and built automated email notifications with multi-language support.</li>
+        <li>Managed full deployment via <b>Docker on a Linux server</b> — owning the project end to end, from architecture through to production.</li>
+    </ul>
+
+    <div class="project-header">
+        <span class="project-title">RocketVideo — Educational Video Platform (team project)</span>
+    </div>
+    <ul class="bullets">
+        <li>Contributing to a team-built video and course-hosting platform at AeonBytes.</li>
+        <li>Wrote <b>core CRUD logic</b> for courses, modules, and lectures with role-based access control governing content management permissions.</li>
+        <li>Designed the <b>drip-scheduling system</b> controlling content release timing, anchored to individual student enrollment dates.</li>
+        <li>Collaborating within a fixed development team using <b>Git branching workflows</b>, resolving merge conflicts and adapting to established team conventions.</li>
+    </ul>
+
+    <h2 class="section">Professional Experience</h2>
+
+    <div class="job-header">
+        <span class="job-title">Shipping Coordinator / Production Planning Support — <span class="company">Givaudan Deutschland</span></span>
+        <span class="job-dates">Apr 2022 – Present</span>
+    </div>
+    <p class="location">Baierbrunn, Germany</p>
+    <ul class="bullets">
+        <li>Plan and coordinate <b>20–30+ daily European shipments</b> across Road, Air, Sea, and Express modes.</li>
+        <li>Led the <b>automation of shipment planning processes</b>, moving the majority of European shipments to fully automatic planning and directly reducing manual bottlenecks.</li>
+        <li>Act as the operational point of contact between production, customer care, and international carrier partners, translating business and customer needs into working processes.</li>
+        <li>Manage export compliance and customs documentation (ATR, Certificates of Origin) across EU and global markets.</li>
+        <li>Provide backup coverage for Production Planning, balancing capacity, customer priorities, and material availability in SAP.</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Road Hub Transportation Execution Coordinator — <span class="company">Givaudan Business Solutions</span></span>
+        <span class="job-dates">May 2021 – Apr 2022</span>
+    </div>
+    <p class="location">Budapest, Hungary</p>
+    <ul class="bullets">
+        <li>Served as the central coordination point for carrier performance and site integration across the European transportation network.</li>
+        <li>Led the <b>integration of two new production sites</b> into daily operations, managing knowledge transfer and stakeholder training through go-live.</li>
+        <li>Owned carrier relationships through monthly KPI reviews, implementing targeted improvements that measurably raised performance.</li>
+        <li>Investigated and resolved quality complaints and damage cases, embedding corrective actions into ongoing process improvements.</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Key Account Operator — <span class="company">Waberer's International Nyrt.</span></span>
+        <span class="job-dates">Apr 2016 – May 2021</span>
+    </div>
+    <p class="location">Budapest, Hungary</p>
+    <ul class="bullets">
+        <li>Managed strategic customer relationships and daily transport operations for key accounts.</li>
+        <li>Elevated account performance to <b>Category A status</b> through proactive communication and consistent problem resolution.</li>
+        <li>Resolved delays, damages, and invoice discrepancies across the carrier network, maintaining constant communication with clients and internal teams.</li>
+    </ul>
+
+    <div class="job-header">
+        <span class="job-title">Freight Forwarder — <span class="company">Czikoba s.r.o.</span></span>
+        <span class="job-dates">Sep 2015 – Feb 2016</span>
+    </div>
+    <p class="location">Budapest, Hungary</p>
+    <ul class="bullets">
+        <li>Bought and sold road transport capacity for domestic and international shipments as a road transport broker.</li>
+        <li>Sourced carriers via TIMOCOM and a network of logistics partners, and negotiated freight rates with carriers and customers.</li>
+        <li>Managed end-to-end shipment execution, building a foundational understanding of the freight market from the brokerage side.</li>
+    </ul>
+
+    <h2 class="section">Education &amp; Certifications</h2>
+    <p class="body-text"><b>Software Engineering Training — Rakete Mentoring, Munich | 2026</b></p>
+    <p class="body-text">One-to-one training in full-stack development, system architecture, and production-level application building.</p>
+    <p class="body-text"><b>B.A. Communication &amp; Media, International Communication — Károli Gáspár University, Budapest | 2015</b></p>
+
+    <h2 class="section">Languages</h2>
+    <p class="lang-line">Hungarian – Native <span class="sep">|</span> English – Fluent <span class="sep">|</span> German – Intermediate (B1–B2) <span class="sep">|</span> Spanish – A2, actively studying</p>
+
+</div>
+
+@code {
+
+private string _downloadCvTitle = "Download my CV (PDF)";
+
+}
