@@ -40,6 +40,11 @@
     max-width: 200px; width: 100%;
 }
 
+.pic-about {
+    max-width: 200px; 
+    width: 100%;
+}
+
 .link-row {
     display: flex;
     justify-content: center;
@@ -65,7 +70,37 @@
     transform: translateY(-1px);
 }
 
+.div-title {
+    text-align: center;
+    color: var(--color-navy);
+    margin-top: 10px;
+    white-space: pre-line;
+    font-weight: 700;
+}
 
+.div-text {
+    text-align: center;
+    color: var(--color-navy);
+    white-space: pre-line;
+}
+
+.two-col-uneven {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: var(--space-unit);
+}
+
+.two-col-uneven > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .two-col-uneven {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 html, body {
