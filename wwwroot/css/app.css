@@ -1,6 +1,189 @@
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/* ============================================
+   CUSTOM SITE STYLES — Katalin Gulyás portfolio
+   Add this block near the TOP of app.css,
+   before the Blazor scaffolding styles.
+   ============================================ */
+
+:root {
+    --color-navy: #1C3D5A;
+    --color-navy-light: #2C5478;
+    --color-accent: #C9722F;
+    --color-cream: #FAF6F0;
+    --color-text: #2A2A2A;
+    --color-text-muted: #5A5A5A;
+    --color-border: #E4DDD3;
+
+    --font-heading: 'IBM Plex Serif', Georgia, serif;
+    --font-body: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    --space-unit: 1.5rem;
+    --max-width: 1100px;
 }
+
+
+.div-center {
+    text-align: center;
+    color: var(--color-navy);
+    line-height: 1.5;
+}
+
+.div-intro {
+    text-align: center;
+    color: var(--color-navy);
+    line-height: 1.5;
+    margin-top: 20px;
+    white-space: pre-line;
+}
+
+.pic-homepage {
+    text-align: center;
+    max-width: 200px; width: 100%;
+}
+
+.link-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: calc(var(--space-unit) * 2);
+}
+
+.link-row a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-navy);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.6rem 1.4rem;
+    background-color: #fff;
+    transition: all 0.15s ease;
+}
+
+.link-row a:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+}
+
+
+
+
+html, body {
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--color-navy);
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-navy);
+    font-size: 2.75rem;
+    margin-bottom: var(--space-unit);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: calc(var(--space-unit) * 0.75);
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: calc(var(--space-unit) * 0.5);
+}
+
+p {
+    color: var(--color-text);
+    margin-bottom: var(--space-unit);
+}
+
+a {
+    color: var(--color-navy);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+a:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+.site-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-unit);
+}
+
+.btn-primary,
+.btn-accent {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--color-navy);
+    border: 1px solid var(--color-navy);
+    border-radius: 4px;
+    padding: 0.65rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover,
+.btn-accent:hover {
+    background-color: var(--color-navy-light);
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--color-navy);
+    background-color: transparent;
+    border: 1px solid var(--color-navy);
+    border-radius: 4px;
+    padding: 0.65rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-navy);
+    color: #fff;
+}
+
+section {
+    padding: calc(var(--space-unit) * 3) 0;
+}
+
+section + section {
+    border-top: 1px solid var(--color-border);
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-unit);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
 
 h1:focus {
     outline: none;
@@ -10,11 +193,6 @@ a, .btn-link {
     color: #0071c1;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;

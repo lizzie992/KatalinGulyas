@@ -12,6 +12,11 @@
 }
 .cv-page * { box-sizing: border-box; }
 
+
+.h1 {
+    text-align: center;
+}
+
 h1.name {
     font-size: 2rem;
     font-weight: 700;
