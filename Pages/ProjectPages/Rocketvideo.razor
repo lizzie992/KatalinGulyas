@@ -1,17 +1,18 @@
 @page "/Rocketvideo"
 <PageTitle>Rocketvideo</PageTitle>
 
-<h1 style="text-align: center;">@_title</h1>
-<div style="text-align: center;">@_smallTitle</div>
+<div class="div-title">@_title</div>
+<div class="div-text">@_smallTitle</div>
 
-<div style="text-align: center;">@_contribution</div>
+<div class="div-text">@_contribution</div>
 
-<div style="text-align: center;">@_shortDescription</div>
-<div style="text-align: center;">@_featuresTitle</div>
-<div style="text-align: center;">@_features</div>
-<div style="text-align: center;">@_techStackTitle</div>
-<div style="text-align: center;">@_techStack</div>
-<div style="text-align: center;">@_myContribution</div>
+<div class="div-text" >@_shortDescription</div>
+<div class="div-title">@_featuresTitle</div>
+<div class="div-text">@_features</div>
+<div class="div-title">@_techStackTitle</div>
+<div class="div-text">@_techStack</div>
+<div class="div-title">@_myContributionTitle</div>
+<div class="div-text">@_myContribution</div>
 
 @code {
 
@@ -41,6 +42,8 @@ private string _techStack = "Blazor\n"
                             + "Architecture built with scalability in mind\n"
                             + "Docker for containerized, consistent deployment across environments\n"
                             + "A lightweight local database setup for development, separate from the full database used in production\n";
+
+private string _myContributionTitle = "My contribution";
 
 private string _myContribution = "I wrote the core domain classes for courses, modules, and lectures, including full CRUD operations with role-based access control governing who can create, edit, or manage each type of content.\n"
                                  + "I helped evaluate and select the content delivery network used for video hosting and playback.\n"

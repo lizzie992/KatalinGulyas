@@ -3,23 +3,24 @@
 
 <h1>Things I have built:</h1>
 
-<div style="text-align: center;">
-    <p>@_baxiTitle</p>
-    <p>@_baxiDescription</p>
-    <p>@_baxiTechStack</p>
-    <a href="/Baxi" target="_blank">
-        <p>Click here for details</p>
-    </a>
-</div>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Tech stack</th>
+    </tr>
+    <tr>
+        <td><a href="/Baxi" class="project-name-link">@_baxiTitle</a></td>
+        <td>@_baxiDescription</td>
+        <td>@_baxiTechStack</td>
+    </tr>
+    <tr>
+        <td><a href="/Rocketvideo" class="project-name-link">@_rocketvideoTitle</a></td>
+        <td>@_rocketvideoDescription</td>
+        <td>@_rocketvideoTechStack</td>
+    </tr>
+</table>
 
-<div style="text-align: center;">
-    <p>@_rocketvideoTitle</p>
-    <p>@_rocketvideoDescription</p>
-    <p>@_rocketvideoTechStack</p>
-    <a href="/Rocketvideo" target="_blank">
-        <p>Click here for details</p>
-    </a>
-</div>
 
 
 @code {
@@ -30,8 +31,8 @@
 
     private string _rocketvideoTitle = "RocketVideo";
     private string _rocketvideoDescription = "A video and course-hosting platform built with a fixed development team, supporting courses organized into modules and lectures. Includes transcoding, transcription, transcript search, and scheduled content release.";
-    private string _rocketvideoTechStack = "Blazor, Entity Framework Core, Docker";
-    
+    private string _rocketvideoTechStack = "C# / .NET, Blazor, Entity Framework Core, Docker";
+
 
 }
 

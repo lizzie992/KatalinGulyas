@@ -1,41 +1,43 @@
 @page "/Baxi"
 <PageTitle>Baxi</PageTitle>
 
-<h1 style="text-align: center;">@_title</h1>
+<h1>@_title</h1>
 
-<div style="text-align: center;">@_contribution</div>
+<div class="div-title">@_contribution</div>
 
-<div style="text-align: center;">
+<div class="div-title">
     <a href="https://github.com/lizzie992/Baxi" target="_blank">
         <p>Github</p>
     </a>
 </div>
 
-<div style="text-align: center;">@_smallTitle</div>
+<div class="div-title">@_smallTitle</div>
 
-<div style="text-align: center;">@_shortDescription</div>
+<div class="div-text">@_shortDescription</div>
 
-<div style="text-align: center;">@_featuresTitle</div>
+<div class="div-title">@_featuresTitle</div>
 
-<div style="text-align: center;">@_features</div>
+<div class="div-text">@_features</div>
 
-<div style="text-align: center;">
-    <img src="images/adcreation.png" alt="Ad Creation" style="max-width: 700px; width: 100%;"/>
+<div class="div-title">
+    <img src="images/adcreation.png" alt="Ad Creation" class="pic-projects"/>
 </div>
-<div style="text-align: center;">
-    <img src="images/adslist.png" alt="Ad List" style="max-width: 700px; width: 100%;"/>
+<div class="div-title">
+    <img src="images/adslist.png" alt="Ad List" class="pic-projects"/>
 </div>
-<div style="text-align: center;">
-    <img src="images/usermanagement.png" alt="User Management" style="max-width: 700px; width: 100%;"/>
+<div class="div-title">
+    <img src="images/usermanagement.png" alt="User Management" class="pic-projects"/>
 </div>
 
-<div style="text-align: center;">@_techStackTitle</div>
+<div class="div-title">@_techStackTitle</div>
 
-<div style="text-align: center;">@_techStackDescription</div>
+<div class="div-text">@_techStackDescription</div>
 
-<div style="text-align: center;">@_howItWorks</div>
+<div class="div-title">@_howItWorksTitle</div>
 
-<div style="text-align: center">
+<div class="div-text">@_howItWorks</div>
+
+<div class="div-title">
     <p>
         Demo videos
     </p>
@@ -107,6 +109,8 @@
                                            + "Google Maps API — geolocation and route visualization\n"
                                            + "Published in a docker container on a linux server";
 
+    private string _howItWorksTitle = "How It Works";
+    
     private string _howItWorks = "Matching engine. When a user posts an ad, Baxi compares its route against all open ads in the opposite role (driver ↔ passenger) and scores them by geographic overlap and distance, rather than requiring an exact start/end match. This surfaces rides that are a good-enough fit — for example a driver whose route passes near a passenger's stop — instead of only exact matches, which would make the platform far less useful given how few colleagues share an identical commute.\n"
                                  + "Real-time chat. Built with event handlers rather than polling, so messages appear immediately without the client repeatedly asking the server for updates. This keeps the app responsive without adding unnecessary server load.\n"
                                  + "Geolocation. Integrated with the Google Maps JavaScript API for interactive map browsing and distance/route calculations. Since Blazor components are C#-first, the Maps JS SDK is loaded and called via JavaScript interop — one of the few places in the app where JavaScript is used directly.\n"
