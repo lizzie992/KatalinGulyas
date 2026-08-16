@@ -123,6 +123,23 @@
     white-space: pre-line;
 }
 
+@media (max-width: 700px) {
+    .skills-container {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 1rem;
+    }
+
+    .skills-column h1 {
+        font-size: 1.75rem;
+        margin-top: 2rem;
+    }
+
+    .skills-title {
+        margin-top: 1.5rem;
+    }
+}
+
 .two-col {
     display: grid;
     grid-template-columns: 7fr 3fr;
