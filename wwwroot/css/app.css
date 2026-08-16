@@ -23,13 +23,13 @@
 
 .div-center {
     text-align: center;
-    color: var(--color-navy);
+    color: var(--color-text);
     line-height: 1.5;
 }
 
 .div-intro {
     text-align: center;
-    color: var(--color-navy);
+    color: var(--color-text);
     line-height: 1.5;
     margin-top: 20px;
     white-space: pre-line;
@@ -78,7 +78,7 @@
 
 .div-title {
     text-align: center;
-    color: var(--color-navy);
+    color: var(--color-text);
     margin-top: 10px;
     white-space: pre-line;
     font-weight: 600;
@@ -86,11 +86,42 @@
 
 .div-text {
     text-align: center;
-    color: var(--color-navy);
+    color: var(--color-text);
     white-space: pre-line;
     margin: 20px;
 }
 
+
+.skills-column h1 {
+    text-align: left;
+}
+
+.skills-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skills-column {
+    flex: 1;
+    text-align: left;
+}
+
+.skills-title {
+    text-align: left;
+    color: var(--color-text);
+    margin-top: 1.75rem;
+    margin-bottom: 0.25rem;
+    white-space: pre-line;
+    font-weight: 600;
+}
+
+.skills-text {
+    text-align: left;
+    color: var(--color-text);
+    white-space: pre-line;
+}
 
 .two-col {
     display: grid;
