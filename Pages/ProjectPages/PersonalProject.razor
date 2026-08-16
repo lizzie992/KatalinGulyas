@@ -1,16 +1,52 @@
 @page "/Personal"
-<PageTitle>Personal page</PageTitle>
+<PageTitle>Portfolio page</PageTitle>
 
 
-<h1>My personal portfolio page</h1>
+<h1>@_title</h1>
 
+<div class="div-text">@_intro</div>
 
+<div class="div-center">
+    <a href="https://github.com/lizzie992/KatalinGulyas" target="_blank" class="repo-link">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+        </svg>
+        View on GitHub
+    </a>
+</div>
 
-
+<div class="div-title">@_whatItDoesTitle</div>
+<div class="div-text">@_whatItDoesDescription</div>
+<div class="div-title">@_techStackTitle</div>
+<div class="div-text">@_techStackDescription1</div>
+<div class="div-text">@_techStackDescription2</div>
+<div class="div-text">@_techStackDescription3</div>
+<div class="div-text">@_techStackDescription4</div>
+<div class="div-text">@_techStackDescription5</div>
 
 
 
 @code {
+    
+    private string _title = "katalingulyas.com - Personal Portfolio Site";
+
+    private string _intro = "The site you're reading now. I built it to have somewhere that shows what I can do rather than just describing it - and because deploying and maintaining something small and real is a better way to learn a platform than following a tutorial.";
+
+    private string _whatItDoesTitle = "What it does";
+    
+    private string _whatItDoesDescription = "A multi-page Blazor WebAssembly application presenting my background, technical and business skills, CV, and project work.";
+
+    private string _techStackTitle = "Tech stack and technical background";
+
+    private string _techStackDescription1 = "C# / .NET 10 with Blazor WebAssembly. The application compiles to WebAssembly and runs in the browser - there's no server-side component.";
+
+    private string _techStackDescription2 = "HTML5 and CSS3, hand-written. No CSS framework. The site is small enough that one would have added weight and opinions without saving much work, so I built a small design system instead: CSS custom properties for the colour palette, type scale, and spacing unit, meaning a change to the palette is a one-line edit. Layouts use CSS Flexbox, with media queries handling the responsive breakpoints.";
+    
+    private string _techStackDescription3 = "Azure Static Web Apps. Deployed on Azure's free tier. I configured the custom domain myself, including the DNS records at the registrar (CNAME for the subdomain, ALIAS at the apex, TXT for ownership validation) and Azure's automatic certificate provisioning.";
+    
+    private string _techStackDescription4 = "GitHub Actions for CI/CD. Every push to main triggers an automated build and deployment.";
+    
+    private string _techStackDescription5 = "AI-assisted development. I use AI tooling as part of my normal workflow - for working through unfamiliar territory, for debugging, and for moving quickly. I read and understand everything that ends up in the codebase; the value is in covering ground faster, not in skipping the understanding.";
 
 
 }
